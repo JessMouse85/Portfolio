@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    font-family: Garamond;
+}
+
+body {
+    height: 100%;
+    background-color: black;
+}
+
+.section-head {
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(grey, black);
+    text-align: center;
+}
+
+.nav-bar {
+    display: flex;
+    padding: 16px 0;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.nav-bar ul {
+    display: flex;
+    width: 100%;
+}
+
+.nav-bar li {
+    list-style: none;
+    width: 100%;
+}
+
+.nav-bar a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+    width: 100%;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: blueviolet;
+    transition: .3s ease;
+}
+
+.nav-bar a:hover {
+    transform: scale(1.1);
+    background-color:darkorchid;
+}
+
+.nav-bar a:active {
+    transform: scale(1.05);
+    background-color: blue
+}
+
+#page-title {
+    font-size: 5rem;
+    padding: 16px 0;
+    color: white;
+    text-shadow: 4px 4px 7px black;
+}
+
+.content-area {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+.content-box {
+    width: 75%;
+    height: 100%;
+    justify-self: center;
+    background-image: url("../images/pagebg.jpg");
+    background-size: cover;
+}
+
+.content-box p {
+    font-size: 1.5rem;
+    margin: 1% 5%;
+}
+
+.shadow-box{
+    margin: 0 auto;
+    background-color: rgba(200, 180, 220, .7);
+    width: 75%;
+    border: 2px solid black;
+}
+
+#site-demos {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.site-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sub-title {
+    font-size: 2rem;
+}
+
+#site-demos {
+    padding: 2% 0;
+}
+
+#resume {
+    display: flex;
+    border: 2px solid black;
+    flex-direction: column;
+    align-items: center;
+}
+
+#resume .sub-title {
+    font-size: 2rem;
+    width: 90%;
+    align-items: flex-start;
+}
+
+#cover-letter {
+    font-size: 2rem;
+    width: 90%;
+}
+
+#resume .experience {
+    align-items: flex-start;
+    font-size: 1.5rem;
+    padding-left: 5%;
+}
+
+.logo {
+    max-width: 300px;
+    margin: 25px;
+}
+
+.mobile-check {
+    display: none;
+}
+
+@media only screen and (max-width: 1799px){
+    .content-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .content-area {
+        width: 100%;
+        display: flex;
+        flex-direction: column;    
+    }
+    .shadow-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 1080px){
+    .nav-bar a {
+        font-size: 2rem;
+        width: 250px;
+    }
+    .nav-bar li {
+        display: flex;
+        justify-content: center;
+    }
+
+    #page-title {
+        font-size: 2rem;
+    }
+    .mobile-check {
+        display: flex;
+        justify-content: center;
+        font-size: 2rem
+    }
+
+    .mobile-check a {
+        font-size: 2rem;
+        text-decoration: none;
+        color: black;
+        background-color: red;
+        width: 200px;
+        text-align: center;
+        border: 2px solid black;
+        border-radius: 8px;
+    }
+    .section-head {
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-width: 800px){
+    .nav-bar a {
+        font-size: 1.6rem;
+    }
+}
+@media only screen and (max-width: 700px){
+    .nav-bar a {
+        font-size: 1.6rem;
+        width: 180px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #page-head {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-bar{
+        margin: 0 auto;        
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-bar a {
+        font-size: 2rem;
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    iframe {
+        transform: scale(.85);
+    }
+
+    .mobile-check {
+        font-size: 1.5rem;
+    }
+    .mobile-check a {
+        font-size: 1.6rem;
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #page-head {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-bar{
+        margin: 0 auto;        
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-bar a {
+        font-size: 2rem;
+        width: 300px;
+        margin: 0 auto;
+    }
+    iframe {
+        transform: scale(.6);
+    }
+    .mobile-check a {
+        font-size: 1.5rem;
+        width: 100px;
+    }
+}
